@@ -1,0 +1,218 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+.header {
+    color: #000000;
+    padding: 1.5rem;
+    text-align: start;
+    font-size: 1.4rem;
+}
+.line {
+    width: 76%;
+    margin-left: 23%;
+    height: 3px;
+    background-color: #006D77;
+}
+.nav-container {
+    border: none; 
+    background-color: #EEBFAE; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    margin-right: 30px; 
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-links {
+    display: flex;
+    list-style-type: none; 
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.nav-links a:hover {
+    font-size: 22px; 
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(233, 170, 140, 0.993); 
+    /* transition: property duration timing-function delay; */
+    transition: all 0.4s ease; 
+}
+.nav-links li {
+    padding-left: 5px;
+    padding-top: 9px;
+    margin-right: 20px;
+}
+.nav-links li a {
+    padding-left: 7px;
+    padding-right: 80px;
+    text-decoration: none; 
+    font-size: 1.2rem;
+    color: #000000; 
+}
+.profile_image {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 20px; 
+    margin-left: 15px;
+    margin-right: 40px; 
+}
+.nav-links li:last-child a {
+    font-weight: bold;
+    font-size: 24px;
+    color: black; 
+    display: flex; 
+    align-items: center; 
+}
+
+
+/* #### Main Content ##### */
+.profile-container {
+    display: flex;
+    justify-content: start;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; 
+    background-color: rgb(164, 164, 170); 
+}
+.text-circle {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+
+/* ################# FFFOOORRRMMM ################# */
+body {
+    background-color: white;
+}
+.about_me {
+    margin-left: 12%;
+    margin-top: 60px;
+    padding: 10px;
+    text-align: start;
+    color: #333;
+}
+
+.container {
+    padding: 30px 60px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 70%;
+    height: 450px;
+    background-color: #93d4da;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+}
+ul .info_list{
+    width: 100%;
+    list-style: none;
+    padding: 14px 20px ;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f8f5f5;   
+}
+ul .info_list:hover{
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #f8f5f5;  
+    /* transition: property duration timing-function delay; */
+    transition: padding 0.3s; 
+}
+.manage_psw {
+    display: flex;
+    justify-content: start;
+}
+.wid1 {
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    
+} 
+#manage_password:hover {
+    box-shadow: 0 0 5px 1px rgba(121, 124, 121, 0.5);
+    border-color: white;
+    width: 100%;
+    background-color: rgb(187, 182, 182);
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: padding 0.2s; 
+}
+
+.but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 15px; 
+}
+#log_out  {
+    width: 30%; 
+    margin-top: 15px;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #595c7c;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: padding 0.2s; 
+}
+
+#log_out:hover{
+    background-color: #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px 1px rgba(121, 124, 121, 0.5);
+    color: black;
+    padding: 14px;
+    font-size: 1.1rem;
+}
+button#log_out:focus {
+    /* outline: none; */
+    border-color: #2B2E4A;
+    box-shadow: 0 0 5px rgba(43, 46, 74, 0.5);
+}  
+.space {
+    height: 100px;
+    background-color: #eef1f1;
+    border: 1px solid white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main>
+        <h1 class="login"> LOGIN....</h1>
+        <div class="container">
+            <form id="form">        
+                <input type="email" class="wid1" id="login-email" placeholder="Enter Email"><br><br>
+                <input type="password" class="wid1" id="login-password" placeholder="Enter Password"><br><br>
+                <div class="forget_psw">
+                    <a href="#forget_password" class="wid1" id="login-forget"> Forget Password </a>
+                </div>
+                <!-- <button type="button" class="wid1" id="login-forget" onclick="location.href='forget_psw.html';">Forget Password</button><br><br> -->
+                <div class="but">
+                    <button class="wid" type="button" id="login-done">Done</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section id="forget_password">
+        <h1 class="forget"> FORGET PASSWORD....</h1>
+        <div class="container2">
+            <form id="form2">
+                <div class="reset-options">
+                    <button class="reset-option" >Send via Email</button>
+                    <button class="reset-option" >Send via SMS</button>
+                </div>
+                <div class="but1">
+                    <button class="wid" type="submit" id="forget-done">Done</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>

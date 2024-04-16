@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Profile Page </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="manage.html"> -->
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="logo">FeedForward</h1>
+            <div class="line"></div>
+       </div>
+        <!-- nav-bar   -->
+        <div class="nav-container">
+            <nav class="nav-items">
+                <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="pages/about.html"> Courses </a></li>
+                  <li><a href="pages/services.html"> Events </a></li>
+                  <li><a href="pages/about.html"> Feedback </a></li>
+                  <li><a href="pages/services.html">Reviews</a></li>
+                  <li><a href="pages/contact.html">Contact Us</a></li>
+                  <li>
+                    <a href="pages/profile.html">
+                        <img src="img/profile.png" alt="Profile Image" class="profile_image active"  >
+                        Profile
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="circle">
+               
+            </div>
+            <div class="text-circle">
+                <label for="color">Choose any color: </label>
+                <input type="color" name="color" id="color">
+                <br>
+                <label for="gallery">Choose from Gallery: </label>
+                <input type="file" id="gallery" name="image" accept="image/png, image/jpeg">
+                
+            </div>
+        </div>
+
+        <section>
+            <h1 class="about_me"> About Me....</h1>
+            <div class="container">
+                <ul class="info">
+                    <li class="info_list info_list1"><strong>Name:</strong> John Doe </li>
+                    <li class="info_list info_list2"><strong>Email:</strong> john@example.com</li>
+                    <li class="info_list info_list3"><strong>Phone:</strong> +1234567890</li>
+                    <li class="info_list info_list4"><strong>Password:</strong> abc@123 </li> 
+                    <div class="manage_psw info_list ">
+                    <!-- <a href="#manage_password" class="wid1" id="manage_password"> Manage Password </a> -->
+                    <a href="manage.html" class="wid1" id="manage_password"> Manage Password </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="but">
+                <p>Want to logout ?</p>
+                <button type="button" id="log_out"> Log Out</button><br>
+                <p>Want to delete your Profile ?</p>
+                <button type="button" id="log_out">Delete Your Profile</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="space"></div>
+    </footer>
+    
+</body>
+</html>
