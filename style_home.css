@@ -1,0 +1,186 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: url(IMG/pic1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+}
+.header {
+    color: #000000;
+    padding: 1.5rem;
+    text-align: start;
+    font-size: 1.5rem;
+}
+.line {
+    width: 70%;
+    margin-left: 23%;
+    height: 2px;
+    background-color: #006D77;
+}
+.main-box {
+    padding: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    height: 100vh;
+}
+.box {
+    width: 90%;
+    height: 450px;
+    background-color: #AEAAA8;
+    margin-bottom: 60px;
+    margin-left: 80px;
+    border: none;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    align-items: center; 
+} 
+button {
+    background-color: #2B2E4A;
+    color: white;
+    padding: 20px;
+    /* margin: 2rem 3.5rem; */
+    margin: 32px 56px;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+button:hover {
+    background-color: #595d91;
+    padding: 24px;
+    font-size: 26;
+    /*transition: property duration timing-function delay;    */
+    transition: padding 0.2s ease-in-out 0.3s;
+}
+.improve {
+    text-align: center;
+    border-radius: 10px;
+    background-color: #c9c6c69f;
+    border: none;
+    position: absolute;
+    top: 65%;
+    left: 68%;
+    transform: translateX(-50%);
+    padding: 16px; 
+    width: 46%;
+}
+.improve h4 {
+    font-size: 2.4rem;
+    color: #181717;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 480px) {
+    /* Additional adjustments for even smaller screens 
+    .header {
+        font-size: 1.2rem;
+    }
+    .line {
+        width: 60%;
+        margin-left: 20%;
+    }
+    .box {
+        height: auto;
+    }
+    .button {
+        font-size: 18px;
+    }
+    .improve h4 {
+        font-size: 1.8rem;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+} */ 
+/*
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+ */

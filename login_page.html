@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login_page.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-light@5/light.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="signup"> LOG IN HERE </h2>
+        </div>
+        <form class="form" id="form" method="POST" action="login.php">       
+            <!-- <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Your User Name" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div> -->
+            <div class="form-control">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" class="formerror" placeholder="Enter Your Email" autocomplete="off" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" class="formerror wid1"  placeholder="Enter Password" autocomplete="off" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <input type="submit" name="submit" value="Submit" class="btn">
+            <p style="margin-top:10px ;text-align: center;"> New user ? <a href="sign_up.html">Sign Up here</a></p>
+        </form>
+    </div>
+    <!-- <script type="text/javascript">
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password  = document.getElementById('password');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+            if (validate()) {
+                sendData();
+            }
+        });
+
+        const sendData = () => {
+            const formData = new FormData(form);
+
+            fetch('login.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    Swal.fire({
+                        title: 'Login Successful!',
+                        text: data.message,
+                        icon: 'success',
+                    }).then(() => {
+                        window.location.href = 'home_page.html';
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: data.message,
+                        icon: 'error',
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'An unexpected error occurred. Please try again.',
+                    icon: 'error',
+                });
+            });
+        };
+
+        const isEmail = (emailVal) => {
+            var atSymbol = emailVal.indexOf("@");
+            if (atSymbol < 1) return false;
+            var dot = emailVal.lastIndexOf('.');
+            if (dot <= atSymbol + 2) return false;
+            if (dot === emailVal.length - 1) return false;
+            return true;
+        };
+
+        const validate = () => {
+            const usernameVal = username.value.trim();
+            const emailVal = email.value.trim();
+            const passwordVal  = password.value.trim();
+            let valid = true;
+
+            if(usernameVal === ""){
+                setErrorMsgs(username, 'Username cannot be blank');
+                valid = false;
+            } else if(usernameVal.length <= 2){
+                setErrorMsgs(username, 'Username must be at least 3 characters');
+                valid = false;
+            } else if (!/^\s*[a-zA-Z0-9_-]+$/.test(usernameVal)) {
+                setErrorMsgs(username, 'Username can only contain letters, numbers, underscores, and hyphens');
+                valid = false;
+            } else if(usernameVal.length > 8){
+                setErrorMsgs(username, 'Username cannot be more than 8 characters');
+                valid = false;
+            } else {
+                setSuccessMsgs(username);
+            }
+
+            if(emailVal === ""){
+                setErrorMsgs(email, 'Email cannot be blank');
+                valid = false;
+            } else if(!isEmail(emailVal)){
+                setErrorMsgs(email, 'Not a valid email');
+                valid = false;
+            } else {
+                setSuccessMsgs(email);
+            }
+
+            if(passwordVal === ""){
+                setErrorMsgs(password, 'Password cannot be blank');
+                valid = false;
+            } else if(passwordVal.length < 6){
+                setErrorMsgs(password, 'Password must be at least 6 characters long');
+                valid = false;
+            } else {
+                setSuccessMsgs(password);
+            }
+
+            return valid;
+        };
+
+        const setErrorMsgs = (input, errorMessage) => {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = "form-control error";
+            small.innerText = errorMessage;
+        };
+
+        const setSuccessMsgs = (input) => {
+            const formControl = input.parentElement;
+            formControl.className = "form-control success";
+        };
+    </script> -->
+    <script type="text/javascript">
+        const form = document.getElementById('form');
+        // const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); 
+            if (validate()) {
+                sendData();
+            }
+        });
+
+        const sendData = () => {
+            const formData = new FormData(form);
+
+            fetch('login.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    Swal.fire({
+                        title: 'Login Successful!',
+                        text: data.message,
+                        icon: 'success',
+                    }).then(() => {
+                        window.location.href = 'home_page.html';
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        text: data.message,
+                        icon: 'error',
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'An unexpected error occurred. Please try again.',
+                    icon: 'error',
+                });
+            });
+        };
+
+        const isEmail = (emailVal) => {
+            var atSymbol = emailVal.indexOf("@");
+            if (atSymbol < 1) return false;
+            var dot = emailVal.lastIndexOf('.');
+            if (dot <= atSymbol + 2) return false;
+            if (dot === emailVal.length - 1) return false;
+            return true;
+        };
+
+        const validate = () => {
+            const usernameVal = username.value.trim();
+            const emailVal = email.value.trim();
+            const passwordVal = password.value.trim();
+            let valid = true;
+
+            if (usernameVal === "") {
+                setErrorMsgs(username, 'Username cannot be blank');
+                valid = false;
+            } else if (usernameVal.length <= 2) {
+                setErrorMsgs(username, 'Username must be at least 3 characters');
+                valid = false;
+            } else if (!/^\s*[a-zA-Z0-9_-]+$/.test(usernameVal)) {
+                setErrorMsgs(username, 'Username can only contain letters, numbers, underscores, and hyphens');
+                valid = false;
+            } else if (usernameVal.length > 8) {
+                setErrorMsgs(username, 'Username cannot be more than 8 characters');
+                valid = false;
+            } else {
+                setSuccessMsgs(username);
+            }
+
+            if (emailVal === "") {
+                setErrorMsgs(email, 'Email cannot be blank');
+                valid = false;
+            } else if (!isEmail(emailVal)) {
+                setErrorMsgs(email, 'Not a valid email');
+                valid = false;
+            } else {
+                setSuccessMsgs(email);
+            }
+
+            if (passwordVal === "") {
+                setErrorMsgs(password, 'Password cannot be blank');
+                valid = false;
+            } else if (passwordVal.length < 6) {
+                setErrorMsgs(password, 'Password must be at least 6 characters long');
+                valid = false;
+            } else {
+                setSuccessMsgs(password);
+            }
+
+            return valid;
+        };
+
+        const setErrorMsgs = (input, errorMessage) => {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = "form-control error";
+            small.innerText = errorMessage;
+        };
+
+        const setSuccessMsgs = (input) => {
+            const formControl = input.parentElement;
+            formControl.className = "form-control success";
+        };
+    </script>
+
+</body>
+</html>
+
+
