@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  header {
+    width: 90%;
+    background-color: #eebfae;
+    color: #060606;
+    padding: 1em;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3%;
+    margin-right: 200px;
+    border-radius: 15px;
+  }
+  
+  .line {
+    width: 75%;
+    margin-left: 2%;
+    margin-right: 75px;
+    height: 2px;
+    background-color: #006D77;
+  }
+  
+  .FeedForward {
+    margin-top: 10px;
+    margin-left: 3%;
+  }
+  
+  .FeedForward h1 {
+    margin-top: 0;
+  }
+  
+  button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    margin-right: 105px;
+    outline: none;
+  }
+  
+  button.logo {
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .search-container {
+    margin-top: 10px;
+    margin-left: 830px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .search-container input {
+    padding: 1px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+  
+  .search-container button {
+    padding: 6px 8px;
+    background-color: #02344e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .search-container button:hover {
+    background-color: #002437;
+  }
+
+  .search-results {
+    margin-top: 10px;
+  }
+
+  #CSS{
+    color: black;
+    font: x-large italic ;
+  }
+  .social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  
+  .social-icons li a {
+    display: block;
+    width: 30px; /* Adjust the size of icons */
+    height: 30px; /* Adjust the size of icons */
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .button {
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(235, 171, 171);
+  color: rgb(5, 4, 4);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  }
+  
+  .course-container {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-evenly; /* Adjust alignment as needed */
+  flex-wrap: wrap; /* Allow wrapping */
+  flex-direction:row;
+  }
+  
+  .course-box {
+  width: 30%; /* Adjust width as needed */
+  margin: 50px;
+  background-color: #C8CDCD;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-left: 40px;
+  }
+  
+  .course-info {
+  display: flex; /* Add display flex */
+  align-items: center; /* Vertically align items */
+  }
+  
+  .course-box h2 {
+  color: #006D77;
+  margin-top: 10px;
+  margin-left: 15px; 
+  font-size: 18px;
+  margin-right: 60px;
+  font-weight: normal; 
+  }
+  
+  .course-info p {
+  color: #000000;
+  margin-left: 10px; /* Add left margin to create space between image and text */
+  margin-top: -10px; /* Adjust the margin as needed */
+  }
+  
+  .course-info h2 {
+  color: #006D77;
+  }.learn-button {
+  font-size: 18px;
+  margin-right: 70px;
+  padding: 2px 12px; /* Adjust padding to increase button width */
+  background-color: #5ba4aa;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  }
+  
+  .learn-button:hover {
+  text-decoration: none;
+  background-color: gray;
+  color: #FFFFFF;
+  border-radius: 13px;
+  }
+  .about-course-h1{
+    text-align: center;
+    height: 15px;
+  }
+  #image12{
+   border: 10px solid black;
+   margin: 30px;
+   
+
+  }
+  .footer{
+    background-color: #696565;
+    color: #0c0c0c;
+    padding: 1.8rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.footer p{
+    padding: 8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
