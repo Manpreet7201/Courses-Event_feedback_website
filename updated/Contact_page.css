@@ -1,0 +1,335 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    background-color: #eebfae;
+    color: #060606;
+    padding: 1.5em;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3%;
+    margin-right: 200px;
+    border-radius: 15px;
+}
+
+.line {
+    width: 75%;
+    margin-left: 2%;
+    margin-right: 75px;
+    height: 2px;
+    background-color: #006D77;
+}
+
+.FeedForward {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+.FeedForward h1 {
+    margin-top: 0;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 640px 0; /* Add horizontal margin for spacing */
+}
+button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    margin-right: 50px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.home-button {
+    font-size: 23px;
+    padding: 0 20px; }
+
+
+button.logo {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+button.header-button {
+    font-size: 23px;
+    margin-right: 90px;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: #92bbbf;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-link.active {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        display: none;
+        width: 100%;
+        text-align: left;
+        margin: 10px 0; /* Add vertical margin for spacing */
+        padding: 10px;
+        border-top: 1px solid #ccc;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-link.active {
+        display: block;
+    }
+
+    header {
+        margin-right: 23%;
+    }
+}
+
+.rectangle {
+    background-color:#CDE8E5;
+    padding: 40px; /* Increase padding for a bigger box */
+    margin: 20px auto 40px; /* Center the box horizontally and set margin-top to 20px and margin-bottom to 40px */
+    width: 80%; /* Set width to 80% of the container */
+    max-width: 800px; /* Set maximum width to 800 pixels */
+    text-align: center; /* Center text inside the box */
+    border-radius: 13px;
+}
+
+
+.quote-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Adjust alignment as needed */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.quote-box {
+    width:65%; /* Adjust width as needed */
+    margin: 10px;
+    background-color: #CDE8E5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; 
+    border-radius: 13px;
+   
+}
+.quote-info {
+    display: flex; /* Add display flex */
+    align-items: center; /* Vertically align items */
+}
+.quote-info p {
+    color: #006D77;
+    margin-left: 60px; /* Add left margin to create space between image and text */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 40px; /* Adjust the margin as needed */
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row; /* Ensures items are laid out in a row */
+    justify-content: space-between; /* Adds space between the flex items */
+    align-items: flex-start; /* Aligns items at the start of the flex container */
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    margin: 20px; /* Adjust overall margin */
+}
+
+.contact-box {
+    width: 98%; /* Adjust width as needed */
+    margin: 18px;
+    background-color: #C8CDCD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 650px;
+   
+}
+.input-container {
+    background-color: #f0eeee;
+    padding: 3px;
+    margin-left: 750px;
+    margin-right: 36px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    position: relative; /* Add relative positioning */
+}
+
+.input-container label {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+    background-color: #f0eeee; /* Match background color */
+    padding: 0 5px; /* Add padding to label */
+    font-size: 16px; /* Adjust font size */
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+    width: calc(100% - 22px); /* Adjust width to accommodate label */
+    padding: 8px;
+    border: 1px solid #f0eeee;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /* Disable resizing of textarea */
+    margin-top: 30px; /* Adjust top margin */
+    background-color: #f0eeee;
+}
+.input-container label + textarea {
+    height: 150px; /* Adjust height */
+}
+
+.contact-box {
+    position: relative; /* Ensure relative positioning for absolute positioning within */
+}
+
+.vertical-line {
+    border-left: 1px solid black;
+    height: 81%; /* Adjust height to match the container height */
+    position: absolute;
+    left: 50%;
+    top: 69px; /* Adjust top margin */
+    margin-bottom: 85px; /* Adjust bottom margin */
+    margin-left: -56px; /* Half of the border width */
+}
+
+
+.paragraph{
+    margin-top: 40px;
+    margin-left: 22%;
+    font-size: 32px; 
+    margin-right: 250px;/* Adjust the font size as needed */
+    font-weight: bolder;
+    color: #6A6B73;
+}
+.paragraph .contact-message {
+    margin-left: 90px; 
+    margin-top: 22%;/* Adjust the margin as needed */
+}
+
+.contact-details {
+    padding: 10px;
+}
+
+.contact-details p {
+    margin: 0;
+}
+.submit-button {
+    font-size: 23px;
+    margin-left: 650px; /* Adjust margin as needed */
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 2px 12px; /* Adjust padding to increase button width */
+    background-color: #5ba4aa;
+    color: #fff;
+    cursor: pointer;
+    border: none; /* Remove border */
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add transition for smoother animation */
+}
+
+.submit-button:hover {
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+
+.footer{
+    background-color: #696565;
+    color: #0c0c0c;
+    padding: 1.8rem;
+    text-align: center;
+    margin-top: 60px;
+    height:140px;
+}
+.social-media-links i{
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer p{
+    padding: 8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.fas fa-map-marker-alt{
+    background-color: rgb(141, 47, 47);
+}
+.address-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Adjust alignment as needed */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.address-box {
+    width:35%; /* Adjust width as needed */
+    margin: 10px;
+    background-color: #f0eeee;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; 
+    border-radius: 5px;
+   margin-left: -720px;
+   height: 520px;
+}
+.address-info {
+    display: inline-block;
+}
+.address-info p {
+    color: #000000;
+    margin-left: 25px; /* Add left margin to create space between image and text */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-right: 40px; /* Adjust the margin as needed */
+    font-size: 12px;
+    font-weight: bold;
+}
+.responsive-map {
+    width: 88%;
+    height: 270px; /* Adjust based on your design needs */
+    border: none;
+    margin-top: 15px;
+    margin-left: 29px;
+    margin-right: px;
+    margin-bottom: 13px;
+}
+
+
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedForward</title>
+    <link rel="stylesheet" href="Contact_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Review_page.css">
+    <!-- <link rel="stylesheet" href="courses_reviews.css"> -->
+    <style>
+        /* Hide main_section2 initially */
+        #main_section2 {
+            display: none;
+            margin-top: 20px;
+            min-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        /* Add margin-bottom to the first section */
+        #main_section {
+            margin-bottom: 520px;
+        }
+         /* Add margin-top to the reviews box */
+         .reviews-box {
+            margin-top: 20px; /* Adjust this value as needed */
+        }
+
+        /* Add margin-top to individual review items */
+        .new-box.review-item {
+            margin-top: 20px; /* Adjust this value as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <div class="header-container">
+        <div class="FeedForward">
+            <h1>FeedForward</h1>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <!-- nav-bar -->
+        <a href="Home_page.html" style="color: black;"><button class="header-button">Home</button></a>
+        <a href="Courses.html" style="color: black;"><button class="header-button">Courses</button></a>
+        <a href="event_home.html" style="color: black;"><button class="header-button">Events</button></a>
+        <a href="Feedback_page.html" style="color: black;"><button class="header-button">Feedback</button></a>
+        <a href="Review_page.html" style="color: black;"><button class="logo">Reviews</button></a>
+        <a href="Contact_page.html" style="color: black;"><button class="header-button">Contact Us</button></a>
+        <a href="profile.html" style="color: black;"><button class="header-button">Profile</button></a>
+    </header>
+    <main>
+        <div class="option-heading">
+            <p>Select reviews type:</p>
+            <button class="course-button" onclick="showCoursesSection()">Courses</button>
+            <button class="events-button" onclick="showEventsSection()">Events</button>
+        </div>
+        <section id="main_section">
+            <h1 style="margin-top: 60px; margin-left: 40px; font-weight: normal; font-size: 18px;">Courses Reviews:</h1>
+            <div class="reviews-container">
+                <div class="reviews-box">
+                    <div class="content-box" id="courses-reviews">
+                        <!-- Reviews will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main_section2">
+            <h1 style="margin-top: 10px; margin-left: 40px; font-weight: normal; font-size: 18px;">Events Reviews:</h1>
+            <div class="reviews-container">
+                <div class="reviews-box">
+                    <div class="content-box" id="events-reviews">
+                        <!-- Reviews will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script>
+    // Example reviews data
+    const coursesReviews = [
+        {
+            name: 'ABC',
+            avatar: 'https://www.pngkey.com/png/full/115-1150420_avatar-png-pic-male-avatar-icon-png.png',
+            date: 'April 28, 2024',
+            content: 'So glad to see the instructor’s expertise in machine learning course and the overall course is amazing and interesting to learn. Everything I\'ve learned here is so amazing. I would recommend this course to you all.'
+            
+        },
+        {
+            name: 'DEF',
+            avatar: 'https://smallimg.pngkey.com/png/small/291-2919510_m0no-avatar-face-icon-png.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+        {
+
+            name: 'JKL',
+            avatar: 'https://smallimg.pngkey.com/png/small/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+          {
+
+            name: 'IPR',
+            avatar: 'https://smallimg.pngkey.com/png/small/115-1150152_default-profile-picture-avatar-png-green.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+          {
+
+            name: 'XYZ',
+            avatar: 'https://smallimg.pngkey.com/png/small/54-549370_surprise-face-avatar-icon-icon.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },     
+    ];
+
+    const eventsReviews = [
+    {
+            name: 'ABC',
+            avatar: 'https://www.pngkey.com/png/full/115-1150420_avatar-png-pic-male-avatar-icon-png.png',
+            date: 'April 28, 2024',
+            content: 'So glad to see the instructor’s expertise in machine learning course and the overall course is amazing and interesting to learn. Everything I\'ve learned here is so amazing. I would recommend this course to you all.'
+        },
+        {
+            name: 'DEF',
+            avatar: 'https://smallimg.pngkey.com/png/small/291-2919510_m0no-avatar-face-icon-png.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+        {
+
+            name: 'JKL',
+            avatar: 'https://smallimg.pngkey.com/png/small/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+          {
+
+            name: 'IPR',
+            avatar: 'https://smallimg.pngkey.com/png/small/115-1150152_default-profile-picture-avatar-png-green.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },
+          {
+
+            name: 'XYZ',
+            avatar: 'https://smallimg.pngkey.com/png/small/54-549370_surprise-face-avatar-icon-icon.png',
+            date: 'April 28, 2024',
+            content: 'This course exceeded my expectations. The instructor was engaging and the content was well-structured.'
+        },     
+    ];
+    // Shuffle function
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    function renderReviews(reviews, containerId) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = ''; // Clear existing reviews
+        reviews.forEach((review, index) => {
+            console.log('Index:', index); // Log index for troubleshooting
+            const isFirstReview = index === 0; // Check if this is the first review
+            const reviewItemClass = isFirstReview ? 'new-box first-review review-item' : 'new-box review-item';
+            const reviewItem = `
+                <div class="${reviewItemClass}">
+                    <div class="avatar-container">
+                        <img src="${review.avatar}" alt="Avatar" class="avatar">
+                        <h2 style="margin-top: 0; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">${review.name}</h2>
+                        <p class="review-timestamp">(Posted on ${review.date})</p>
+                    </div>
+                    <div class="review">
+                        <p style="font-size: 18px;">${review.content}</p>
+                        <button class="heart-button">
+                            <svg class="heart-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3c2.09 0 3.76.81 4.5 2.09C19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += reviewItem;
+        });
+    }
+
+    function showCoursesSection() {
+        document.getElementById('main_section').style.display = 'block';
+        document.getElementById('main_section2').style.display = 'none';
+        renderReviews(shuffle(coursesReviews), 'courses-reviews');
+    }
+
+    function showEventsSection() {
+        document.getElementById('main_section').style.display = 'none';
+        document.getElementById('main_section2').style.display = 'block';
+        renderReviews(shuffle(eventsReviews), 'events-reviews');
+    }
+
+    // Initial load
+    document.addEventListener('DOMContentLoaded', function() {
+        showCoursesSection(); // Show courses reviews by default
+    });
+</script>
+
+<a href="" style="color: black;"><button class="see-more-button">See more</button></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="social-media-links">
+<i class="fab fa-instagram fa-4x"></i>
+<i class="fab fa-facebook fa-4x"></i>
+<i class="fab fa-twitter fa-4x"></i>
+<i class="fab fa-linkedin fa-4x"></i>   
+</div>
+<p>Feed Forward &copy; 2020, All Rights Reserved</p>
+<div class="contact-us">
+<a href="contact.html" style="color: black;">Contact Us</a>
+</div>
+</footer> 
+</div>
+</body>
+</html>

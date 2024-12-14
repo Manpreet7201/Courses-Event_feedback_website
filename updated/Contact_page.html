@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedForward</title>
+    <link rel="stylesheet" href="Contact_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+     
+        footer {
+            background-color: #696565;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            position: relative; /* Change position to relative */
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+</head>
+<body>
+
+<div class="content-container">
+    <div class="header-container">
+        <div class="FeedForward">
+            <!-- Your main heading content goes here -->
+            <h1>FeedForward</h1>
+        </div>
+        
+        <div class="line"></div>
+    </div>
+
+    <header>
+     <div class="navbar">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="nav-menu">
+        <a href="Home_page.html" style="color: black;"><button class="home-button">Home</button></a>
+        <a href="Courses.html" style="color: black;"><button class="header-button">Courses</button></a>
+        <a href="event_home.html" style="color: black;"><button class="header-button">Events</button></a>
+        <a href="Feedback_page.html" style="color: black;"><button class="header-button">Feedback</button></a>
+        <a href="Review_page.html" style="color: black;"><button class="header-button">Reviews</button></a>
+        <a href="Contact_page.html" style="color: black;"><button class="logo">Contact Us</button></a>
+        <a href="profile.html" style="color: black;"><button class="header-button">Profile</button></a>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Rectangle between header and footer -->
+
+    <div class="quote-container">
+        <div class="quote-box">
+            <div class="quote-info">
+                <p>Your success is our success.
+                    <span style="margin-left: 110px;">Let’s work together!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+<p class="paragraph">If you are facing any problem or want to ask something,
+    <span class="contact-message" style="margin-left: 210px;">Please contact with us!</span>
+</p>
+   
+   
+<div class="contact-container">
+    <div class="contact-box">
+        <div class="address-container">
+            <div class="address-box">
+                <div class="address-info">
+                    <p style="color: black; font-size: 16px; font-weight: normal;"><i class="fas fa-map-marker-alt"></i>Address:Eternal University, Baru sahib, district-Sirmour, Himachal Pradesh </p>
+                    </p>
+                        <p style="font-size: 16px; font-weight: normal;">Phone No:+91-7833911763</p>
+                        <p style="font-size: 16px; font-weight: normal; margin-top: 10px; margin-left: 100px;"> +91-9816640660</p>
+                        <p style="font-size: 16px; font-weight: normal; margin-top: 10px; margin-left: 100px;"> +91-9816400624</p>
+                    <iframe   class="responsive-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6857.420927661407!2d77.2855889026296!3d30.754633456145424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f713724ed5af7%3A0xdd16231bf3210403!2sBaru%20Sahib%2C%20Himachal%20Pradesh%20173001!5e0!3m2!1sen!2sin!4v1715257567738!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Add your contact content here -->
+        <h2 style="margin-left: 750px; margin-top: -506px;">send us a message</h2>
+            <div class="vertical-line"></div> <!-- Vertical line -->
+            <form>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Submit button outside the contact container -->
+    <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+     
+     
+</div>
+
+
+<footer class="footer">
+    <div class="social-media-links">
+        <i class="fab fa-instagram fa-4x"></i>
+        <i class="fab fa-facebook fa-4x"></i>
+        <i class="fab fa-twitter fa-4x"></i>
+        <i class="fab fa-linkedin fa-4x"></i>   
+    </div>
+    <p>Feed Forward &copy; 2020, All Rights Reserved</p>
+    <div class="contact-us">
+        <a href="Contact_page.html" style="color: black;">Contact Us</a>
+    </div>
+</footer> 
+</footer>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.toggle('active'));
+    });
+</script>
+
+
+</body>
+</html>

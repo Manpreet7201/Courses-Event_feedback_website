@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    background-color: #eebfae;
+    color: #060606;
+    padding: 1.5em;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3%;
+    margin-right: 200px;
+    border-radius: 15px;
+}
+
+.line {
+    width: 75%;
+    margin-left: 2%;
+    margin-right: 75px;
+    height: 2px;
+    background-color: #006D77;
+}
+
+.FeedForward {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+.FeedForward h1 {
+    margin-top: 0;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    margin-right: 50px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.logo {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+button.header-button {
+    font-size: 23px;
+    margin-right: 90px;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: #92bbbf;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+button.home-button {
+    font-size: 23px; /* Match the font size of the "Reviews" button */
+    padding: 0 20px; /* Match the padding of the "Reviews" button */
+}
+
+.quote-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Adjust alignment as needed */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.quote-box {
+    width: 60%; /* Adjust width as needed */
+    margin: 10px;
+    background-color: #CDE8E5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; 
+    border-radius: 13px;
+}
+
+.quote-info {
+    display: flex; /* Add display flex */
+    align-items: center; /* Vertically align items */
+}
+
+.quote-info p {
+    color: black; /* Ensure the text color is set */
+    margin-left: 60px; /* Add left margin to create space between image and text */
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-right: 40px; /* Adjust the margin as needed */
+    font-size: 26px; /* Adjust the font size as needed */
+    font-weight: normal;
+    font-family: 'Inria Serif', serif; /* Use font-family to change the font */
+}
+.option-heading {
+    margin-left: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.feedback-btn {
+    background-color: #2B2E4A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 285px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Inria Serif', serif;
+    font-size: 25px;
+}
+
+.feedback-btn:hover {
+    background-color: #5caeb6;
+    color: #FFFFFF;
+}
+#feedback-type {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#courses:checked ~ #events-feedback,
+#events:checked ~ #courses-feedback {
+    display: none;
+}
+
+#courses:checked ~ #courses-feedback,
+#events:checked ~ #events-feedback {
+    display: block;
+}
+
+
+.course-button,
+.events-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2B2E4A; /* Green */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 350px; /* Add left margin */
+}
+
+.course-button:hover,
+.events-button:hover {
+    background-color: #92bbbf; /* Darker green on hover */
+}
+
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    z-index: 3;
+    width: max-content; /* Adjust width as needed */
+    margin-left: 350px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #696565;
+    color: #0c0c0c;
+    padding: 1.8rem;
+    text-align: center;
+    height: 140px;
+    display: block; /* Ensure the footer is displayed */
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure the footer appears above other elements */
+    
+     /* Ensure the footer is above other content */
+}
+
+.social-media-links i{
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer p{
+    padding: 8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.stars {
+    font-size: 24px; /* Adjust the size of the stars */
+}
+
+.stars input[type="radio"] {
+    display: none; /* Hide the radio inputs */
+}
+
+.stars label {
+    color: #ccc; /* Color of inactive star */
+    cursor: pointer;
+}
+
+.stars label:before {
+    content: '\f005'; /* Unicode character for filled star */
+    font-family: 'Font Awesome Free'; /* Font family for Font Awesome */
+}
+
+.stars input[type="radio"]:checked ~ label:before {
+    color: #ffc107; /* Color of active star */
+}

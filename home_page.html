@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is used to define the width of the screen where the web content need to be shown-->
+    <link rel="stylesheet" href="style_home.css">
+    <title> Course and Event Feedback Website </title>
+</head>
+<body>
+    <header class="header">
+         <h1 class="logo">FeedForward</h1>
+         <div class="line"></div>
+    </header>
+
+    <main class="main-box">
+        <div class="container">
+            <div class="box">
+                <div class="login" id="">
+                    <button class="but" type="button" onclick="location.href='sign_up.html';">Signup</button>
+                    <button class="but" type="button" onclick="location.href='login_page.html';">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="improve">
+            <h4> That's how we improve </h4>
+        </div>
+    </main>
+
+    <!-- <script>
+        // Check if the user is logged in or not
+        const isLoggedIn = false; // You can set this dynamically based on user authentication status
+
+        // Function to dynamically generate login/signup buttons
+        function generateButtons() {
+            const loginButtons = document.getElementById('loginButtons');
+
+            if (isLoggedIn) {
+                // If user is logged in, show logout button
+                const logoutButton = document.createElement('button');
+                logoutButton.classList.add('but');
+                logoutButton.textContent = 'Logout';
+                logoutButton.onclick = function() {
+                    // Handle logout functionality
+                    // For example: redirect to logout endpoint or clear session
+                    alert('Logged out successfully!');
+                };
+                loginButtons.appendChild(logoutButton);
+            } else {
+                // If user is not logged in, show login and signup buttons
+                const loginButton = document.createElement('button');
+                loginButton.classList.add('but');
+                loginButton.textContent = 'Login';
+                loginButton.onclick = function() {
+                    // Handle login functionality
+                    // For example: redirect to login page
+                    window.location.href = 'login.html';
+                };
+                loginButtons.appendChild(loginButton);
+
+                const signupButton = document.createElement('button');
+                signupButton.classList.add('but');
+                signupButton.textContent = 'Signup';
+                signupButton.onclick = function() {
+                    // Handle signup functionality
+                    // For example: redirect to signup page
+                    window.location.href = 'signup.html';
+                };
+                loginButtons.appendChild(signupButton);
+            }
+        }
+
+        // Call the function to generate buttons when the page loads
+        window.onload = generateButtons;
+    </script> -->
+    
+</body>
+</html>

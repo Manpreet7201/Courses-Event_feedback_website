@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    background-color: #eebfae;
+    color: #060606;
+    padding: 1.5em;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3%;
+    margin-right: 200px;
+    border-radius: 15px;
+}
+
+.line {
+    width: 75%;
+    margin-left: 2%;
+    margin-right: 75px;
+    height: 2px;
+    background-color: #006D77;
+}
+
+.FeedForward {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+.FeedForward h1 {
+    margin-top: 0;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    margin-right: 50px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.logo {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+button.header-button {
+    font-size: 23px;
+    margin-right: 90px;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: #92bbbf;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+
+img {
+    margin-left: 35%;
+    margin-top: 4%;
+}
+
+.text-after-image {
+    text-align: left;
+    font-size: 16px;
+    color: #000000;
+    margin: 20px 0;
+    font-weight: bold; 
+    margin-left: 3%;
+}
+
+
+.course-container {
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-around; /* Adjust alignment as needed */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.course-box {
+    width: 28%; /* Adjust width as needed */
+    margin: 18px;
+    background-color: #C8CDCD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+}
+
+.course-info {
+    display: flex; /* Add display flex */
+    align-items: center; /* Vertically align items */
+}
+
+.course-box h2 {
+    color: #006D77;
+    margin-top: 10px;
+    margin-left: 20px; 
+    font-size: 18px;
+    margin-right: 70px;
+    font-weight: normal; 
+}
+
+.course-info p {
+    color: #000000;
+    margin-left: 20px; /* Add left margin to create space between image and text */
+    margin-top: -9px; /* Adjust the margin as needed */
+}
+
+.course-info h2 {
+    color: #006D77;
+}
+
+.top-rated-heading {
+    margin-left: 40px;
+    font-size: 23px; /* Adjust the margin value as needed */
+}
+
+
+.learn-button {
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 2px 12px; /* Adjust padding to increase button width */
+    background-color: #5ba4aa;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.learn-button:hover {
+    text-decoration: none;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+
+.more-courses-button{
+    font-size: 18px;
+    margin-left: 1380px;
+    padding: 2px 12px; /* Adjust padding to increase button width */
+    background-color: #5ba4aa;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 13px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.more-courses-button:hover {
+    text-decoration: none;
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+
+.search-container {
+    margin-top: 18px;
+    margin-left: 1140px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-container input {
+    padding: 7px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.search-container button {
+    padding: 8px 10px;
+    background-color: #5fa6ac;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #696565;
+    color: #0c0c0c;
+    padding: 1.8rem;
+    text-align: center;
+    margin-top: 60px;
+    height:140px;
+}
+.social-media-links i{
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer p{
+    padding: 8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}

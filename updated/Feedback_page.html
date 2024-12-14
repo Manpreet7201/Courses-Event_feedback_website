@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedForward</title>
+    <link rel="stylesheet" href="Feedback_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Feedback_cyber_css.css">
+    <link rel="stylesheet" href="Feedback_machine_css.css">
+    <link rel="stylesheet" href="Feedback_web_css.css">
+    <link rel="stylesheet" href="Feedback_compiler_css.css">
+    <link rel="stylesheet" href="Feedback_python_css.css">
+    <style>
+        /* initially hide all sections except cyber_content */
+        #machine-content, #web-content, #compiler-content, #python-content {
+            display: none;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="content-container">
+    <div class="header-container">
+        <div class="FeedForward">
+            <!-- Your main heading content goes here -->
+            <h1>FeedForward</h1>
+        </div>
+        
+        <div class="line"></div>
+    </div>
+
+    <header>
+        <!-- nav-bar   -->
+        <a href="Home_page.html" style="color: black;"><button class="home-button">Home</button></a>
+        <a href="Courses.html" style="color: black;"><button class="header-button">Courses</button></a>
+        <a href="event_home.html" style="color: black;"><button class="header-button">Events</button></a>
+        <a href="Feedback_page.html" style="color: black;"><button class="logo">Feedback</button></a>
+        <a href="Review_page.html" style="color: black;"><button class="header-button">Reviews</button></a>
+        <a href="Contact_page.html" style="color: black;"><button class="header-button">Contact Us</button></a>
+        <a href="profile.html" style="color: black;"><button class="header-button">Profile</button></a>
+        
+    </header>
+    <div class="quote-container">
+        <div class="quote-box">
+            <div class="quote-info">
+                <p>How satisfied are you with the course,  give your feedback here, so that  
+                    <span style="margin-left: 50px;"> we can 
+                        know your experience and also improve the courses & events!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+   <main>
+    <div class="option-heading">
+        <p>Select feedback type:</p>
+        <div class="dropdown">
+            <button class="course-button">Courses</button>   
+            <div class="dropdown-content">  
+                <a href="javascript:void(0)" onclick="showCoursesSection('cyber_content')">Cyber security</a>
+                <a href="javascript:void(0)" onclick="showCoursesSection('machine-content')">Machine Learning</a>
+                <a href="javascript:void(0)" onclick="showCoursesSection('web-content')">Web Technologies</a>
+                <a href="javascript:void(0)" onclick="showCoursesSection('compiler-content')">Compiler Design</a>
+                <a href="javascript:void(0)" onclick="showCoursesSection('python-content')">Python Programming</a>
+            </div>
+            
+        </div>
+        <button class="events-button">Events</button>
+    </div>
+
+    <section id="cyber_content">
+        <!-- Cyber Security course content goes here -->
+        <div class="rectangle">
+            <h2 style="margin-left: 35px; font-weight: normal; font-size: 18px;">Cyber Security Course</h2>
+            <div class="feed-container">
+                <div class="feedback-container">
+                    <div class="feedback-box">
+                        <div class="feedback-info">
+                            <p span style="margin-left: 15px;" >Rate here:</p>
+                            <div class="stars-box">
+                                <fieldset class="rating-container">	
+                                    <input type="radio" name="rating" id="rate5">
+                                    <label for="rate5">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate4">
+                                    <label for="rate4">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate3">
+                                    <label for="rate3">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate2">
+                                    <label for="rate2">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate1">
+                                    <label for="rate1">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <div class="rating-value"></div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-line1" style="margin-top: 470px;" ></div>
+                <div class="dotted-line" style="margin-top: 470px;"></div>
+                <div class="horizontal-line" style="margin-top: 470px;"></div>
+                <div class="comment-container">
+                    <div class="comment-box">
+                        <div class="comment-info">
+                            <p span style="margin-left: 15px;" >Write your Feedback here:</p>
+                            <div class="input-container">
+                                <label for="message"></label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h2 style="margin-left: 100px; margin-top: 60px;">Help us improve:</h2>
+                <!-- Additional Questions Box -->
+                <div class="questions-box">
+                    <div class="question-container">
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question1">Question 1: How would you rate your instructor’s delivery of the course material?</label>
+                                <div class="options-container">
+                                        <input type="radio" id="option1a" name="q1" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Excellent</label><br>
+                                        <input type="radio" id="option1b" name="q1" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Good</label><br>
+                                        <input type="radio" id="option1c" name="q1" value="option1c">
+                                        <label for="option1c" style="margin-left: 90px;">C. Average</label><br>
+                                        <input type="radio" id="option1c" name="q1" value="option1c">
+                                        <label for="optiondc" style="margin-left: 90px;">D. Poor</label><br>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 2: The instructor was knowledgeable in the course subject matter and well prepared for each class.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 3: This course was helpful in progress toward my degree.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 4: The course materials were up to date and included the latest information.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 5: The course gave me the confidence to do more advanced work in the subject</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 6: Would you recommend this course to other students?</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Yes</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. No</label><br>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+     
+     
+            <img src="C:\Users\Dell\Pictures\Camera Roll\feedback.png" alt="main image" style="margin-left: 270px; margin-top: 50px;" width="950" height="650">
+            <div class="thanks-container">
+                <div class="thanks-box">
+                    <div class="thanks-box">
+                      <div class="thanks-info">
+                        <p>¡Thanks for the Feedback!¡</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="machine-content">
+        <!-- machine learning course content goes here -->
+        <div class="rectangle">
+            <h2 style="margin-left: 35px; font-weight: normal; font-size: 18px;">Machine learning Course</h2>
+            <div class="feed-container">
+                <div class="feedback-container">
+                    <div class="feedback-box">
+                        <div class="feedback-info">
+                            <p span style="margin-left: 15px;" >Rate here:</p>
+                            <div class="stars-box">
+                                <fieldset class="rating-container">	
+                                    <input type="radio" name="rating" id="rate5">
+                                    <label for="rate5">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate4">
+                                    <label for="rate4">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate3">
+                                    <label for="rate3">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate2">
+                                    <label for="rate2">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <input type="radio" name="rating" id="rate1">
+                                    <label for="rate1">
+                                        <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                    </label>
+                                    <div class="rating-value"></div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal-line1" style="margin-top: 470px;"></div>
+                <div class="dotted-line" style="margin-top: 470px;"></div>
+                <div class="horizontal-line" style="margin-top: 470px;"></div>
+                <div class="comment-container">
+                    <div class="comment-box">
+                        <div class="comment-info">
+                            <p span style="margin-left: 15px;" >Write your Feedback here:</p>
+                            <div class="input-container">
+                                <label for="message"></label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <h2 style="margin-left: 100px; margin-top: 60px;">Help us improve:</h2>
+                <!-- Additional Questions Box -->
+                <div class="questions-box">
+                    <div class="question-container">
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question1">Question 1: How would you rate your instructor’s delivery of the course material?</label>
+                                <div class="options-container">
+                                    <label for="option1a" class="radio-label" style="margin-left: 20px;">
+                                        <input type="radio" id="option1a" name="q1" value="option1a"> A. Excellent
+                                    </label><br>
+                                    <label for="option1b" class="radio-label">
+                                        <input type="radio" id="option1b" name="q1" value="option1b"> B. Good
+                                    </label><br>
+                                    <label for="option1c" class="radio-label">
+                                        <input type="radio" id="option1c" name="q1" value="option1c"> C. Average
+                                    </label><br>
+                                    <label for="optiondc" class="radio-label">
+                                        <input type="radio" id="optiondc" name="q1" value="optiondc"> D. Poor
+                                    </label><br>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+        
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 2: The instructor was knowledgeable in the course subject matter and well prepared for each class.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 3: This course was helpful in progress toward my degree.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 4: The course materials were up to date and included the latest information.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 5: The course gave me the confidence to do more advanced work in the subject</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 6: Would you recommend this course to other students?</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Yes</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. No</label><br>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+        
+            <img src="C:\Users\Dell\Pictures\Camera Roll\feedback.png" alt="main image" style="margin-left: 270px; margin-top: 50px;" width="950" height="650">
+            <div class="thanks-container">
+                <div class="thanks-box">
+                    <div class="thanks-box">
+                      <div class="thanks-info">
+                        <p>¡Thanks for the Feedback!¡</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+           <section id="web-content">
+         
+                <!-- Cyber Security course content goes here -->
+                <div class="rectangle">
+                    <h2 style="margin-left: 35px; font-weight: normal; font-size: 18px;">Web Technologies Course</h2>
+                    <div class="feed-container">
+                        <div class="feedback-container">
+                            <div class="feedback-box">
+                                <div class="feedback-info">
+                                    <p span style="margin-left: 15px;" >Rate here:</p>
+                                    <div class="stars-box">
+                                        <fieldset class="rating-container">	
+                                            <input type="radio" name="rating" id="rate5">
+                                            <label for="rate5">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate4">
+                                            <label for="rate4">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate3">
+                                            <label for="rate3">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate2">
+                                            <label for="rate2">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate1">
+                                            <label for="rate1">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <div class="rating-value"></div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line1" style="margin-top: 470px;"></div>
+                        <div class="dotted-line" style="margin-top: 470px;"></div>
+                        <div class="horizontal-line" style="margin-top: 470px;"></div>
+                        <div class="comment-container">
+                            <div class="comment-box">
+                                <div class="comment-info">
+                                    <p span style="margin-left: 15px;" >Write your Feedback here:</p>
+                                    <div class="input-container">
+                                        <label for="message"></label>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <h2 style="margin-left: 100px; margin-top: 60px;">Help us improve:</h2>
+                        <!-- Additional Questions Box -->
+                        <div class="questions-box">
+                            <div class="question-container">
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question1">Question 1: How would you rate your instructor’s delivery of the course material?</label>
+                                        <div class="options-container">
+                                                <input type="radio" id="option1a" name="q1" value="option1a">
+                                                <label for="option1a" style="margin-left: -70px;">A. Excellent</label><br>
+                                                <input type="radio" id="option1b" name="q1" value="option1b">
+                                                <label for="option1b" style="margin-left: 90px;">B. Good</label><br>
+                                                <input type="radio" id="option1c" name="q1" value="option1c">
+                                                <label for="option1c" style="margin-left: 90px;">C. Average</label><br>
+                                                <input type="radio" id="option1c" name="q1" value="option1c">
+                                                <label for="optiondc" style="margin-left: 90px;">D. Poor</label><br>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 2: The instructor was knowledgeable in the course subject matter and well prepared for each class.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 3: This course was helpful in progress toward my degree.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 4: The course materials were up to date and included the latest information.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 5: The course gave me the confidence to do more advanced work in the subject</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 6: Would you recommend this course to other students?</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Yes</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. No</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+                    <img src="C:\Users\Dell\Pictures\Camera Roll\feedback.png" alt="main image" style="margin-left: 270px; margin-top: 50px;" width="950" height="650">
+                    <div class="thanks-container">
+                        <div class="thanks-box">
+                            <div class="thanks-box">
+                              <div class="thanks-info">
+                                <p>¡Thanks for the Feedback!¡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          <section id="compiler-content">
+                <!-- Cyber Security course content goes here -->
+                <div class="rectangle">
+                    <h2 style="margin-left: 35px; font-weight: normal; font-size: 18px;">Compiler Design Course</h2>
+                    <div class="feed-container">
+                        <div class="feedback-container">
+                            <div class="feedback-box">
+                                <div class="feedback-info">
+                                    <p span style="margin-left: 15px;" >Rate here:</p>
+                                    <div class="stars-box">
+                                        <fieldset class="rating-container">	
+                                            <input type="radio" name="rating" id="rate5">
+                                            <label for="rate5">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate4">
+                                            <label for="rate4">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate3">
+                                            <label for="rate3">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate2">
+                                            <label for="rate2">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate1">
+                                            <label for="rate1">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <div class="rating-value"></div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line1" style="margin-top: 470px;"></div>
+                        <div class="dotted-line" style="margin-top: 470px;"></div>
+                        <div class="horizontal-line" style="margin-top: 470px;"></div>
+                        <div class="comment-container">
+                            <div class="comment-box">
+                                <div class="comment-info">
+                                    <p span style="margin-left: 15px;" >Write your Feedback here:</p>
+                                    <div class="input-container">
+                                        <label for="message"></label>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <h2 style="margin-left: 100px; margin-top: 60px;">Help us improve:</h2>
+                        <!-- Additional Questions Box -->
+                        <div class="questions-box">
+                            <div class="question-container">
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question1">Question 1: How would you rate your instructor’s delivery of the course material?</label>
+                                <div class="options-container">
+                                        <input type="radio" id="option1a" name="q1" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Excellent</label><br>
+                                        <input type="radio" id="option1b" name="q1" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Good</label><br>
+                                        <input type="radio" id="option1c" name="q1" value="option1c">
+                                        <label for="option1c" style="margin-left: 90px;">C. Average</label><br>
+                                        <input type="radio" id="option1c" name="q1" value="option1c">
+                                        <label for="optiondc" style="margin-left: 90px;">D. Poor</label><br>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 2: The instructor was knowledgeable in the course subject matter and well prepared for each class.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 3: This course was helpful in progress toward my degree.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 4: The course materials were up to date and included the latest information.</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 5: The course gave me the confidence to do more advanced work in the subject</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <div class="question-info">
+                                <label for="question2">Question 6: Would you recommend this course to other students?</label>
+                              <div class="options-container">
+                                <input type="radio" id="option1a" name="q2" value="option1a">
+                                <label for="option1a" style="margin-left: -70px;">A. Yes</label><br>
+                                <input type="radio" id="option1b" name="q2" value="option1b">
+                                <label for="option1b" style="margin-left: 90px;">B. No</label><br>
+                             </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+                
+                    <img src="C:\Users\Dell\Pictures\Camera Roll\feedback.png" alt="main image" style="margin-left: 270px; margin-top: 50px;" width="950" height="650">
+                    <div class="thanks-container">
+                        <div class="thanks-box">
+                            <div class="thanks-box">
+                              <div class="thanks-info">
+                                <p>¡Thanks for the Feedback!¡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+      
+
+            <section id="python-content" >
+                <!-- Cyber Security course content goes here -->
+                <div class="rectangle">
+                    <h2 style="margin-left: 35px; font-weight: normal; font-size: 18px;">Python Programming Course</h2>
+                    <div class="feed-container">
+                        <div class="feedback-container">
+                            <div class="feedback-box">
+                                <div class="feedback-info">
+                                    <p span style="margin-left: 15px;" >Rate here:</p>
+                                    <div class="stars-box">
+                                        <fieldset class="rating-container">	
+                                            <input type="radio" name="rating" id="rate5">
+                                            <label for="rate5">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate4">
+                                            <label for="rate4">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate3">
+                                            <label for="rate3">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate2">
+                                            <label for="rate2">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <input type="radio" name="rating" id="rate1">
+                                            <label for="rate1">
+                                                <svg id="Object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1122 1122"><defs><style>.cls-1{fill:#f7db5e;}.cls-2{fill:#f3cc30;}.cls-3{fill:#edbd31;}</style></defs><path class="cls-2" d="m570.497,252.536l93.771,190c1.543,3.126,4.525,5.292,7.974,5.794l209.678,30.468c8.687,1.262,12.156,11.938,5.87,18.065l-151.724,147.895c-2.496,2.433-3.635,5.939-3.046,9.374l35.817,208.831c1.484,8.652-7.597,15.25-15.367,11.165l-187.542-98.596c-3.085-1.622-6.771-1.622-9.857,0l-187.542,98.596c-7.77,4.085-16.851-2.513-15.367-11.165l35.817-208.831c.589-3.436-.55-6.941-3.046-9.374l-151.724-147.895c-6.286-6.127-2.817-16.803,5.87-18.065l209.678-30.468c3.45-.501,6.432-2.668,7.974-5.794l93.771-190c3.885-7.872,15.11-7.872,18.995,0Z"/><path class="cls-1" d="m561,296.423l-83.563,161.857c-4.383,8.49-12.797,14.155-22.312,15.024l-181.433,16.562,191.688,8.964c12.175.569,23.317-6.81,27.543-18.243l68.077-184.164Z"/><path class="cls-3" d="m357.284,838.933l-4.121,24.03c-1.484,8.652,7.597,15.25,15.367,11.165l187.541-98.596c3.086-1.622,6.771-1.622,9.857,0l187.541,98.596c7.77,4.085,16.851-2.513,15.367-11.165l-35.817-208.831c-.589-3.435.55-6.941,3.046-9.374l151.724-147.894c6.287-6.127,2.818-16.802-5.87-18.065l-70.23-10.205c-113.59,203.853-287.527,311.181-454.405,370.34Z"/></svg>
+                                            </label>
+                                            <div class="rating-value"></div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line1"></div>
+                        <div class="dotted-line"></div>
+                        <div class="horizontal-line"></div>
+                        <div class="comment-container">
+                            <div class="comment-box">
+                                <div class="comment-info">
+                                    <p span style="margin-left: 15px;" >Write your Feedback here:</p>
+                                    <div class="input-container">
+                                        <label for="message"></label>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <h2 style="margin-left: 100px; margin-top: 60px;">Help us improve:</h2>
+                        <!-- Additional Questions Box -->
+                        <div class="questions-box">
+                            <div class="question-container">
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question1">Question 1: How would you rate your instructor’s delivery of the course material?</label>
+                                        <div class="options-container">
+                                                <input type="radio" id="option1a" name="q1" value="option1a">
+                                                <label for="option1a" style="margin-left: -70px;">A. Excellent</label><br>
+                                                <input type="radio" id="option1b" name="q1" value="option1b">
+                                                <label for="option1b" style="margin-left: 90px;">B. Good</label><br>
+                                                <input type="radio" id="option1c" name="q1" value="option1c">
+                                                <label for="option1c" style="margin-left: 90px;">C. Average</label><br>
+                                                <input type="radio" id="option1c" name="q1" value="option1c">
+                                                <label for="optiondc" style="margin-left: 90px;">D. Poor</label><br>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 2: The instructor was knowledgeable in the course subject matter and well prepared for each class.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 3: This course was helpful in progress toward my degree.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 4: The course materials were up to date and included the latest information.</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 5: The course gave me the confidence to do more advanced work in the subject</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Agree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Disagree</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. Strongly Disagree</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                                <div class="question-box">
+                                    <div class="question-info">
+                                        <label for="question2">Question 6: Would you recommend this course to other students?</label>
+                                      <div class="options-container">
+                                        <input type="radio" id="option1a" name="q2" value="option1a">
+                                        <label for="option1a" style="margin-left: -70px;">A. Yes</label><br>
+                                        <input type="radio" id="option1b" name="q2" value="option1b">
+                                        <label for="option1b" style="margin-left: 90px;">B. No</label><br>
+                                     </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <input type="submit" value="Submit" class="submit-button"style="margin-left: 720px; margin-top: 20px; margin-bottom: 30px;">
+                    <img src="C:\Users\Dell\Pictures\Camera Roll\feedback.png" alt="main image" style="margin-left: 270px; margin-top: 50px;" width="950" height="650">
+                    <div class="thanks-container">
+                        <div class="thanks-box">
+                            <div class="thanks-box">
+                              <div class="thanks-info">
+                                <p>¡Thanks for the Feedback!¡</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+</main> 
+    <footer class="footer">
+        <div class="social-media-links">
+            <i class="fab fa-instagram fa-4x"></i>
+            <i class="fab fa-facebook fa-4x"></i>
+            <i class="fab fa-twitter fa-4x"></i>
+            <i class="fab fa-linkedin fa-4x"></i>   
+        </div>
+        <p>Feed Forward &copy; 2020, All Rights Reserved</p>
+        <div class="contact-us">
+            <a href="contact.html" style="color: black;">Contact Us</a>
+        </div>
+    </footer> 
+
+    
+<script>
+    function showCoursesSection(sectionId) {
+        // Hide all course sections
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // Show the selected course section
+        var selectedSection = document.getElementById(sectionId);0
+        selectedSection.style.display = 'block';
+    }
+
+//randomness
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Function to shuffle an array
+    function shuffle(array) {
+      let currentIndex = array.length, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (currentIndex !== 0) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      }
+
+      return array;
+    }
+
+    // Select all course sections
+    const coursesContainer = document.getElementById('courses-container');
+    const courses = Array.from(coursesContainer.getElementsByClassName('course'));
+
+    // Shuffle the courses
+    const shuffledCourses = shuffle(courses);
+
+    // Clear the container
+    coursesContainer.innerHTML = '';
+
+    // Append the shuffled courses
+    shuffledCourses.forEach(course => {
+      coursesContainer.appendChild(course);
+    });
+  });
+
+  const stars = document.querySelectorAll('.star-rating input');
+
+stars.forEach((star) => {
+  star.addEventListener('click', (event) => {
+    const rating = event.target.value;
+    console.log('Selected rating:', rating);
+  });
+});
+
+
+    
+    </script>
+     
+</body>
+</html>

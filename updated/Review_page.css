@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 90%;
+    background-color: #eebfae;
+    color: #060606;
+    padding: 1.5em;
+    text-align: left;
+    margin-top: 7px;
+    margin-left: 3%;
+    margin-right: 200px;
+    border-radius: 15px;
+}
+
+.line {
+    width: 75%;
+    margin-left: 2%;
+    margin-right: 75px;
+    height: 2px;
+    background-color: #006D77;
+}
+
+.FeedForward {
+    margin-top: 10px;
+    margin-left: 3%;
+    font-size: 22px; /* Adjust the font size as needed */
+}
+
+.FeedForward h1 {
+    margin-top: 0;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    margin-right: 50px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.logo {
+    font-weight: bold;
+    font-size: 38px;
+}
+
+button.header-button {
+    font-size: 23px;
+    margin-right: 90px;
+}
+
+button:hover {
+    text-decoration: none;
+    background-color: #92bbbf;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+
+.option-heading {
+    margin-left: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.course-button,
+.events-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2B2E4A; /* Green */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 350px; /* Add left margin */
+}
+
+.course-button:hover,
+.events-button:hover {
+    background-color: #92bbbf; /* Darker green on hover */
+}
+
+.social-icons-container {
+    margin-top: 10px; /* Add margin at the top to create space */
+    margin-bottom: 30px; /* Add margin at the bottom to create space */
+    text-align: center;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-checkbox:checked ~ #courses-feedback {
+    display: block;
+}
+
+#courses-feedback {
+    display: none;
+}
+
+#main_section{
+    height: 100vh;
+}
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align thanks box in the center horizontally */
+    margin-top: 0px; /* Add margin at the top to create space between the image and the thanks box */
+}
+
+.reviews-box {
+    width: 90%;
+    background-color: #C8CDCD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    margin-top: 10px;
+    height: 1070px;
+    margin-bottom: 90px;
+}
+.content-box{
+    width: 95.3%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    margin-top: 30px;
+    margin-left: 30px;
+    height: 970px;
+    margin-bottom: 10px;
+}
+
+.new-box {
+    background-color: #99C1C5; /* Change the background color as needed */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 990px; /* Add margin at the top to create space between this box and other content */
+    border-radius: 1px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 128px;
+}
+
+.new-box1 {
+    background-color: #99C1C5; /* Change the background color as needed */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin at the top to create space between this box and other content */
+    border-radius: 1px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 108px;
+}
+
+.new-box2 {
+    background-color: #99C1C5; /* Change the background color as needed */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin at the top to create space between this box and other content */
+    border-radius: 1px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 108px;
+}
+.new-box3 {
+    background-color: #99C1C5; /* Change the background color as needed */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin at the top to create space between this box and other content */
+    border-radius: 1px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 108px;
+}
+.new-box4 {
+    background-color: #99C1C5; /* Change the background color as needed */
+    padding: 20px; /* Add padding inside the box */
+    margin-top: 20px; /* Add margin at the top to create space between this box and other content */
+    border-radius: 1px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 108px;
+}
+
+.see-more-button {
+    font-size: 23px;
+    margin-left: 1150px; /* Adjust margin as needed */
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 2px 12px; /* Adjust padding to increase button width */
+    background-color:  #2B2E4A;
+    color: #fff;
+    cursor: pointer;
+    border: none; /* Remove border */
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Add transition for smoother animation */
+}
+
+.see-more-button:hover {
+    background-color: gray;
+    color: #FFFFFF;
+    border-radius: 13px;
+}
+.filled-star {
+    color: gold; /* Change color as desired */
+    margin-left: 28px;
+    font-size: 27px;
+    margin-top: -20px;
+}
+
+
+
+.heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    position: relative;
+    margin-top: -20px;
+    margin-left: 1170px;
+  }
+
+  .heart-icon {
+    width: 100%;
+    height: 100%;
+    fill: rgb(96, 96, 96); /* Adjust color as needed */
+  }
+
+  .heart-button:hover .heart-icon {
+    fill: #ff4444; /* Adjust hover color as needed */
+  }
+
+  .avatar-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center items vertically */
+}
+.avatar {
+    border-radius: 50%; /* Make the avatar circular */
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some margin for spacing */
+}
+.new-box.review-item {
+    margin-top: 10px; /* Adjust this value as needed */
+}
+
+.new-box.first-review.review-item {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+
+.footer{
+    background-color: #696565;
+    color: #0c0c0c;
+    padding: 1.8rem;
+    text-align: center;
+    margin-top: 60px;
+    height:140px;
+}
+.social-media-links i{
+    margin: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.footer p{
+    padding: 8px;
+    font-weight: 400;
+    font-size: 1.3rem;
+}

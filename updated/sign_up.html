@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="sign_up.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-light@5/light.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="signup"> SIGN UP HERE </h2>
+        </div>
+        <form action="new.php" method="POST" class="form" id="form">        
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Your Full Name" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" class="formerror" placeholder="Enter Email" autocomplete="off" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label for="phone">Phone </label>
+                <input type="tel" name="number" id="phone" class="formerror wid1" placeholder="Enter Phone number" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password </label>
+                <input type="password" name="password" id="password" class="formerror wid1"  placeholder="Create a Password" autocomplete="off" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div>
+            <!-- <div class="form-control">
+                <label for="repassword">Password-recheck </label>
+                <input type="password" name="repassword" id="repassword" class="formerror wid1"  placeholder="Confirm Password" autocomplete="off" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Msg</small>
+            </div> -->
+            <input type="submit" value="Submit" class="btn">
+            
+        </form>
+    </div>
+    <script type="text/javascript">
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const phone  = document.getElementById('phone');
+        const password  = document.getElementById('password');
+        // const repassword  = document.getElementById('repassword');
+        // add event     // here annonymus function or call back function
+        form.addEventListener('submit',(event) => {
+            event.preventDefault();
+            validate();
+        })
+
+        const sendData = (usernameVal,sRate,count) => {
+            if (sRate === count){
+                // alert('Sign Up Successfull');
+                // sweet alert fire popup
+                Swal.fire({
+                    title: 'Sign Up Successfull!',
+                    text: `Welcome, ${usernameVal} !  To the Feed Forward world!`,
+                    icon: 'success',
+                }).then(() => {
+                    location.href = `home.html?username=${usernameVal}`;
+                });
+            }
+        };
+
+        // final form validation checking all fields are blue or not
+        const successMsg = (usernameVal) => {
+            let formCon = document.getElementsByClassName('form-control');
+            var count = formCon.length - 1;
+            for(var i=0; i<formCon.length; i++){
+                if (formCon[i].className === "form-control success"){
+                    var sRate = 0 + i;
+                    sendData(usernameVal,sRate,count);
+                }
+            }
+        };
+
+
+        // email validate more
+        const isEmail = (emailVal) => {
+            var atSymbol = emailVal.indexOf("@");
+            if (atSymbol < 1) return false;
+            var dot = emailVal.lastIndexOf('.');
+            if (dot <= atSymbol + 2) return false;  // checking that dot should be after 2places of @
+            if (dot === emailVal.length - 1) return false;   // checking data at the end of dot, is it or not data after dot
+            return true;
+        }
+
+
+        // defining the validate function
+        const validate = () => {
+            const usernameVal = username.value.trim();
+            const emailVal = email.value.trim();
+            const phoneVal  = phone.value.trim();
+            const passwordVal  = password.value.trim();
+            // const repasswordVal  = repassword.value.trim();
+
+            // validate user name
+            if(usernameVal === ""){
+                setErrorMsgs(username,'username can not be blank');
+            } else if(usernameVal.length <= 2){
+                setErrorMsgs(username,'username min 3 char');
+            } else if (!/^\s*[a-zA-Z0-9_-]+$/.test(usernameVal)) {
+                setErrorMsgs(username, 'username can only contain letters, numbers, underscores, and hyphens');
+            } else if(usernameVal.length > 8){
+                setErrorMsgs(username,'username can not be more than 8 char');
+            }else {
+                setSuccessMsgs(username)
+            }
+
+            // validate email
+            if(emailVal === ""){
+                setErrorMsgs(email,'email can not be blank');
+            } else if(!isEmail(emailVal)){
+                setErrorMsgs(email,'Not a valid Email');
+            }else {
+                setSuccessMsgs(email)
+            }
+
+            // validate phone
+            if(phoneVal === ""){
+                setErrorMsgs(phone,'phone cannot be blank');
+            } else if(phoneVal.length != 10){
+                setErrorMsgs(phone,'Not a valid phone number');
+            }else {
+                setSuccessMsgs(phone)
+            }
+
+            // validate password
+            if(passwordVal === ""){
+                setErrorMsgs(password,'password cannot be blank');
+            } else if(passwordVal.length < 8){
+                setErrorMsgs(password,'Password must be at least 8 characters long');
+            }else {
+                setSuccessMsgs(password)
+            }
+            // cpassword
+            // if(repasswordVal === ""){
+            //     setErrorMsgs(repassword,'Please re-enter your password');
+            // } else if (repasswordVal != passwordVal) {
+            //     setErrorMsgs(repassword, 'Passwords do not match');
+            // } else if(repasswordVal.length < 8){
+            //     setErrorMsgs(repassword,'Password must be at least 8 characters long');
+            // }else {
+            //     setSuccessMsgs(repassword)
+            // }
+        successMsg(usernameVal);    // final validation function call and defined uper as arrow function
+        }
+
+        function setErrorMsgs(input,errormsgs){
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small')
+            formControl.className = " form-control error"
+            small.innerText = errormsgs;
+        }
+        function setSuccessMsgs(input) {
+        const formControl = input.parentElement;
+        formControl.className = "form-control success"; 
+        // formControl.classList.remove('error');
+        // formControl.classList.add('success');
+}
+    </script>
+
+</body>
+</html>
